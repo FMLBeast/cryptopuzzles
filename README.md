@@ -23,7 +23,7 @@ In 2019, an Arweaver known as 'Tiamat' created a series of complex cryptographic
 - **Total Puzzles Created**: 13+ identified
 - **Solved Puzzles**: 7 confirmed (Puzzles 1, 2, 4, 5, 7, 8, 13)
 - **Unsolved Puzzles**: 6 identified (Puzzles 3, 9, 10, 11, 12, and others)
-- **Total Unclaimed Rewards**: 1000+ AR tokens (~$21,000+ USD)
+- **Total Unclaimed Rewards**: 1000+ AR tokens (~$21,000+ USD) + 1 ETH (~$3,500 USD)
 
 ## Notable Puzzle Types
 

@@ -113,11 +113,32 @@
     },
     {
       "id": 11,
-      "name": "Puzzle Weave 11",
+      "name": "Puzzle Weave 11 - Bodhi Tree Mystery",
       "status": "unsolved",
       "announced_date": "2020",
-      "difficulty": "unknown",
-      "techniques": ["unknown"]
+      "prize": "1 ETH",
+      "prize_usd_estimate": 3500,
+      "years_unsolved": 5,
+      "ethereum_address": "0xFF2142E98E09b5344994F9bEB9C56C95506B9F17",
+      "passphrase_discovered": "Bodhi tree blossoms",
+      "candidate_keys_generated": 689986,
+      "search_space_combinations": "1.7e12",
+      "hidden_messages_count": 18,
+      "difficulty": "very_hard",
+      "techniques": [
+        "steganography",
+        "LSB_extraction",
+        "multi_bitplane_analysis",
+        "DCT_frequency_domain",
+        "DFT_frequency_domain",
+        "AES_CBC_decryption",
+        "7bit_ASCII_decoding",
+        "segment_frequency_analysis",
+        "ethereum_private_key_verification",
+        "brute_force_pipeline"
+      ],
+      "documentation": "puzzles/unsolved/puzzle_11_bodhi_tree_mystery.md",
+      "investigation_files": "puzzles/investigations/puzzle_11/"
     },
     {
       "id": 12,

@@ -7,8 +7,8 @@ This document provides an overview of all currently unsolved ARweave puzzles and
 ## Overview
 
 - **Total Unsolved**: 6 puzzles
-- **Total Unclaimed Rewards**: 1000+ AR (Puzzle 3 alone) + unknown amounts
-- **Longest Unsolved**: Puzzle 3 (6+ years)
+- **Total Unclaimed Rewards**: 1000+ AR (Puzzle 3 alone) + 1 ETH (Puzzle 11) + unknown amounts
+- **Longest Unsolved**: Puzzle 3 (6+ years), Puzzle 11 (5+ years)
 - **Difficulty Range**: Hard to Very Hard
 
 ---
@@ -92,11 +92,46 @@ This document provides an overview of all currently unsolved ARweave puzzles and
 
 ---
 
-## Puzzle 11
+## Puzzle 11 - Bodhi Tree Mystery
 
-**Status**: Unsolved
-**Difficulty**: Unknown
-**Information**: Minimal public information available
+**Prize**: 1 ETH (~$3,000-$4,000 USD)
+**Years Unsolved**: 5+ years
+**Difficulty**: Very Hard
+**Ethereum Address**: 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17
+
+### What We Know:
+- **Passphrase Discovered**: "Bodhi tree blossoms"
+- **Candidate Keys Generated**: 689,986 potential private keys from AES-CBC decryption
+- **Hidden Messages**: 18 philosophical sentences extracted via 7-bit ASCII
+- **Steganographic Layers**: LSB, DCT, DFT, alpha channel analysis performed
+- **Search Space**: ~1.7 × 10¹² key combinations remaining
+
+### Key Finding:
+One of the extracted sentences reveals the passphrase:
+> "The greatest treasure is the solution to the riddles of ethereum. The secret keyboard within the virtual machine. Your passphrase is the Bodhi tree blos[soms]"
+
+### Segment Frequency Analysis:
+- 6 high-frequency "Bodhi" patterns identified (possibly red herrings)
+- Top 200 non-Bodhi segments ranked by frequency
+- Pattern: "iBodhiBodhiBodhi" appears 415 times in one half, 453 in another
+
+### Why It's Hard:
+- **Key Construction Unknown**: Have passphrase and candidates, but don't know assembly method
+- **Computational Scale**: Full exhaustive search requires ~21 days at 1M keys/sec
+- **Multiple Layers**: Combines steganography, cryptography, and frequency analysis
+- **Minimal Documentation**: Limited public attempts or solution discussions
+
+### Investigation Methodology:
+7-phase comprehensive approach applied:
+1. Initial reconnaissance (zsteg, steghide, binwalk, exiftool)
+2. Hidden binary extraction (LSB, multi-bitplane analysis)
+3. Philosophical message extraction (7-bit ASCII decoding)
+4. Passphrase discovery (AES-CBC decryption)
+5. Segment frequency analysis
+6. Brute-force pipeline (web3.py verification)
+7. Automated tool analysis (binary entropy, embedded files)
+
+**[Detailed Investigation Documentation](puzzle_11_bodhi_tree_mystery.md)**
 
 ---
 
