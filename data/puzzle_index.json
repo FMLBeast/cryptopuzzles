@@ -1,0 +1,157 @@
+{
+  "collection_name": "ARweave Cryptopuzzles",
+  "creator": "Tiamat",
+  "platform": "ARweave Blockchain",
+  "year_created": 2019,
+  "puzzles": [
+    {
+      "id": 1,
+      "name": "Puzzle Weave 1",
+      "status": "solved",
+      "announced_date": "2019-05-24",
+      "solved_date": "2019-05-24",
+      "solver": "pogo",
+      "prize": "1000 AR",
+      "arweave_url": "n4spxf5lmqlk6jwovmq4e2ho6h2wfvv2pqp5tgdkpfy45qt3iy2a.arweave.net/byT7l6tkFq8mzqshwmju8fVi1rp8H9mYanlxzsJ7RjQ",
+      "wallet_address": "PbdTDYikdddWfNFlDt2aZokALXKe1mJVSC9TALUBNv8",
+      "solution": "5 7 10:01 18 90 Dead Sea Bd6 Apple 039",
+      "puzzle_count": 7,
+      "difficulty": "medium",
+      "techniques": ["algebra", "logic_puzzles", "pattern_recognition", "chess", "geography"]
+    },
+    {
+      "id": 2,
+      "name": "Puzzle Weave 2",
+      "status": "solved",
+      "announced_date": "2019-05-24",
+      "solved_date": "2019-05-24",
+      "solver": "pogo",
+      "prize": "1250 AR",
+      "arweave_url": "yvmqerqbjzui3g2lnze7qwkaocl3ikhavhuvl2vvcek4u7f3e2la.arweave.net/xVkCRgFOaI2bS25J-FlAcJe0KOCp6VXqtREVyny7JpY",
+      "solution": "11 11:51 Nfg3 68+96938=97006",
+      "puzzle_count": 4,
+      "difficulty": "medium",
+      "techniques": ["pattern_counting", "mirroring", "chess_fen_notation", "cryptarithm"]
+    },
+    {
+      "id": 3,
+      "name": "Puzzle Weave 3",
+      "status": "unsolved",
+      "announced_date": "2019-05",
+      "prize": "1000 AR",
+      "prize_usd_estimate": 21000,
+      "arweave_url": "kszeqgxezf5quhzld4nhpasyilhxphclq2peqi5mrn7utxmqhwga.arweave.net/VLJIGuTJewofKx8ad4JYQs93nEuGnkgjrIt_Sd2QPYw",
+      "wallet_address": "wHP6OPG5GMF5dedo_CD8AAy6x8La-gfI5b5pk65Tx_0",
+      "puzzle_count": 8,
+      "answer_format": "8 four-digit words or numbers",
+      "difficulty": "very_hard",
+      "techniques": ["steganography", "visual_analysis", "possibly_sha256"]
+    },
+    {
+      "id": 4,
+      "name": "Puzzle Weave 4",
+      "status": "solved",
+      "announced_date": "2019-05-29",
+      "solved_date": "2019-11-10",
+      "solver": "arpox",
+      "prize": "500 AR",
+      "arweave_url": "ojducxyzj2dirbt7xt2jod7dkwfqolxjre6tzp63fycuq5477vta.arweave.net/ckdBXxlOhoiGf7z0lw_jVYsHLumJPTy_2y4FSHef_WY",
+      "solution": "1225%Odette0x00000000000000000000000000000000000000000e",
+      "puzzle_count": 5,
+      "difficulty": "medium",
+      "techniques": ["algebra", "probability", "logic_puzzles", "hex_notation"]
+    },
+    {
+      "id": 5,
+      "name": "Puzzle Weave 5",
+      "status": "solved",
+      "announced_date": "2019",
+      "arweave_url": "d5zw4kksq5gasg7ezkjvdpey562svcviatdltuyga43lrkexvngq.arweave.net/H3NuKVKHTAkb5MqTUbyY77UqiqgExrnTBgc2uKiXq00",
+      "difficulty": "hard",
+      "techniques": ["unknown"]
+    },
+    {
+      "id": 7,
+      "name": "Puzzle Weave 7",
+      "status": "solved",
+      "announced_date": "2019-06-14",
+      "prize": "3 ETH",
+      "arweave_url": "eplpvctnryuimypdq6gbfk4rx3bbfepzoxz5pldkqdjczy5udpla.arweave.net/I9b6im2OKIZh44eMEquRvsISkfl189esaoDSLOO0G9Y",
+      "difficulty": "very_hard",
+      "techniques": ["unknown"]
+    },
+    {
+      "id": 8,
+      "name": "Puzzle Weave 8",
+      "status": "solved",
+      "announced_date": "2020-01-09",
+      "solved_date": "2020-03-07",
+      "solver": "lia",
+      "prize": "401 AR",
+      "solution": "Rasputin Wilhelm Alekhine",
+      "puzzle_count": 3,
+      "difficulty": "medium",
+      "techniques": ["historical_research", "riddles", "death_descriptions"]
+    },
+    {
+      "id": 9,
+      "name": "Puzzle Weave 9",
+      "status": "unsolved",
+      "announced_date": "2019",
+      "arweave_url": "27xy2rcwg6o2g4colrausghtbtzvjk7au7lsfrwzdgqbq5s6tplq.arweave.net/1--NRFY3naNwTlxBSRjzDPNUq-Cn1yLG2RmgGHZem9c",
+      "difficulty": "very_hard",
+      "techniques": ["unknown"]
+    },
+    {
+      "id": 10,
+      "name": "Puzzle Weave 10",
+      "status": "unsolved",
+      "announced_date": "2020-04-14",
+      "arweave_url": "2xzm6mh75smp5ivf2img3biam3iu7qhodsw5mk7cimkx7g4trl4a.arweave.net/1fLPMP_smP6ipdIYbYUAZtFPwO4crdYr4kMVf5uTivg",
+      "difficulty": "very_hard",
+      "techniques": ["unknown"]
+    },
+    {
+      "id": 11,
+      "name": "Puzzle Weave 11",
+      "status": "unsolved",
+      "announced_date": "2020",
+      "difficulty": "unknown",
+      "techniques": ["unknown"]
+    },
+    {
+      "id": 12,
+      "name": "Puzzle Weave 12",
+      "status": "unsolved",
+      "announced_date": "2020",
+      "arweave_url": "2giml2y2fhwh.arweave.net/gymumAAsxGlzqPL5HzoEB8Xryu61o174j7vHwx21Qoo",
+      "difficulty": "unknown",
+      "techniques": ["unknown"]
+    },
+    {
+      "id": 13,
+      "name": "Puzzle 13",
+      "status": "solved",
+      "solved_date": "2020-05-23",
+      "solver": "LeFevre",
+      "prize": "ETH",
+      "solution": "Terminator 2, Bitcoin Genesis Block, Tuberculosis, Big Brother, Arweave, Terror From the Deep, Dyatlov, Vitalik Buterin",
+      "private_key": "c79eac48c3334fc967d5aecb37222d9a4307027d0ec2bcd6f914417cf78d3c82",
+      "puzzle_count": 8,
+      "difficulty": "hard",
+      "techniques": ["reverse_image_search", "sha256_hashing", "hex_manipulation"]
+    }
+  ],
+  "statistics": {
+    "total_puzzles": 13,
+    "solved_count": 7,
+    "unsolved_count": 6,
+    "last_solve_date": "2020-05-23",
+    "difficulty_breakdown": {
+      "medium": 4,
+      "hard": 2,
+      "very_hard": 4,
+      "unknown": 3
+    }
+  }
+}

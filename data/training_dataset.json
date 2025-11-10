@@ -1,0 +1,372 @@
+{
+  "dataset_info": {
+    "name": "ARweave Cryptopuzzle Training Dataset",
+    "version": "1.0",
+    "created": "2025-11-10",
+    "purpose": "AI model training for cryptographic puzzle solving",
+    "total_examples": 7,
+    "puzzle_types": [
+      "algebraic",
+      "logical",
+      "cryptographic",
+      "steganographic",
+      "historical",
+      "visual_pattern",
+      "chess",
+      "geographic"
+    ]
+  },
+  "training_examples": [
+    {
+      "puzzle_id": 1,
+      "difficulty": "medium",
+      "type": "multi_domain_logic",
+      "problem": "Solve 7 different riddles spanning algebra, pattern recognition, logic, chess, and geography",
+      "sub_problems": [
+        {
+          "type": "algebra",
+          "question": "Sam says: 'If I give you 1 AR, we'll have same amount, but if you give me 1 AR, I'll have twice your amount.' Find Kyle's and Sam's AR amounts.",
+          "solution": "5 7",
+          "technique": "simultaneous_equations",
+          "steps": [
+            "Let K = Kyle's amount, S = Sam's amount",
+            "From first condition: S - 1 = K + 1, so S = K + 2",
+            "From second condition: S + 1 = 2(K - 1), so S = 2K - 3",
+            "Solve: K + 2 = 2K - 3, therefore K = 5, S = 7"
+          ]
+        },
+        {
+          "type": "pattern_recognition",
+          "question": "A countdown device starts at 99:00 and beeps when digits match or show palindrome. What does it show at the 99th beep?",
+          "solution": "10:01",
+          "technique": "systematic_counting",
+          "steps": [
+            "Identify beep conditions: MM:SS where MM=SS or palindrome",
+            "Count backward from 99:00",
+            "Track all valid beep moments",
+            "99th beep occurs at 10:01"
+          ]
+        },
+        {
+          "type": "riddle",
+          "question": "It is dead... Though it was never alive. (4 letters, 3 letters)",
+          "solution": "Dead Sea",
+          "technique": "lateral_thinking",
+          "hint": "Geographic feature with 'dead' in name"
+        },
+        {
+          "type": "chess",
+          "question": "Dog chewed a letter. Fragments found: '9', 'B', 'p'. What was the chess move?",
+          "solution": "Bd6",
+          "technique": "chess_notation",
+          "explanation": "B=Bishop, d6=square, standard algebraic notation"
+        },
+        {
+          "type": "geography",
+          "question": "37.334 - 122.011 = ? (5 characters)",
+          "solution": "Apple",
+          "technique": "coordinate_recognition",
+          "explanation": "Coordinates of Apple headquarters in Cupertino, CA"
+        }
+      ],
+      "final_solution": "5 7 10:01 18 90 Dead Sea Bd6 Apple 039",
+      "solver": "pogo",
+      "time_to_solve": "same_day",
+      "key_skills": ["algebra", "pattern_recognition", "general_knowledge", "chess", "geography"]
+    },
+    {
+      "puzzle_id": 2,
+      "difficulty": "medium",
+      "type": "visual_logic_mixed",
+      "problem": "Solve 4 mini-puzzles with no hints: square counting, mirroring, chess FEN, cryptarithm",
+      "sub_problems": [
+        {
+          "type": "geometric_counting",
+          "question": "Count all squares in a dot grid",
+          "solution": "11",
+          "technique": "systematic_enumeration",
+          "explanation": "Count 1x1, 2x2, 3x3, etc. squares systematically"
+        },
+        {
+          "type": "reflection",
+          "question": "Digital clock shows 12:11 in mirror, what's the actual time?",
+          "solution": "11:51",
+          "technique": "digital_segment_analysis",
+          "explanation": "Mirror flips digits: 1→1, 2→5"
+        },
+        {
+          "type": "chess_fen",
+          "question": "Given FEN position, find the move",
+          "solution": "Nfg3",
+          "technique": "fen_notation_analysis",
+          "explanation": "Knight from f-file to g3"
+        },
+        {
+          "type": "cryptarithm",
+          "question": "AR + PAPER = PIZZA (each letter = unique digit)",
+          "solution": "68+96938=97006",
+          "technique": "constraint_satisfaction",
+          "mapping": {"A": 6, "R": 8, "P": 9, "E": 3, "I": 7, "Z": 0},
+          "steps": [
+            "P must be 9 (5-digit result)",
+            "Analyze carries column by column",
+            "Use logical deduction for remaining digits",
+            "Verify: 68 + 96938 = 97006"
+          ]
+        }
+      ],
+      "final_solution": "11 11:51 Nfg3 68+96938=97006",
+      "solver": "pogo",
+      "time_to_solve": "same_day",
+      "key_skills": ["pattern_counting", "symmetry_analysis", "chess", "cryptarithm_solving"]
+    },
+    {
+      "puzzle_id": 4,
+      "difficulty": "medium",
+      "type": "logic_probability_mixed",
+      "problem": "Solve 5 riddles combining math, probability, logic, and hex notation",
+      "sub_problems": [
+        {
+          "type": "constraint_optimization",
+          "question": "4 people have 100 AR total. Any pair has at least 41 AR. Minimum AR one person can have?",
+          "solution": "12",
+          "technique": "constraint_satisfaction",
+          "explanation": "Minimize one person while satisfying all pair constraints"
+        },
+        {
+          "type": "probability",
+          "question": "3 droids vote randomly for 2 candidates. P(unanimous)?",
+          "solution": "25%",
+          "technique": "combinatorial_probability",
+          "calculation": "2 unanimous outcomes / 8 total = 25%"
+        },
+        {
+          "type": "trick_question",
+          "question": "Odette's mother has 5 daughters: Mag, Meg, Mig, Mog. What's the 5th daughter's name?",
+          "solution": "Odette",
+          "technique": "careful_reading",
+          "explanation": "Name stated in question - common misdirection"
+        }
+      ],
+      "final_solution": "1225%Odette0x00000000000000000000000000000000000000000e",
+      "format_notes": "No spaces, mixed types: numbers, text, hex",
+      "solver": "arpox",
+      "time_to_solve": "5.5_months",
+      "key_skills": ["optimization", "probability", "logic", "hex_notation"]
+    },
+    {
+      "puzzle_id": 8,
+      "difficulty": "medium_hard",
+      "type": "historical_research",
+      "problem": "Identify 3 historical figures from descriptions of their deaths",
+      "sub_problems": [
+        {
+          "type": "historical_death",
+          "question": "Person extremely difficult to kill, survived poison, shooting, and was finally drowned",
+          "solution": "Rasputin",
+          "technique": "historical_research",
+          "context": "Grigori Rasputin (1869-1916), Russian mystic, famous assassination"
+        },
+        {
+          "type": "historical_figure",
+          "question": "Historical figure related to WWI/WWII era",
+          "solution": "Wilhelm",
+          "technique": "historical_research",
+          "context": "Kaiser Wilhelm II, last German Emperor"
+        },
+        {
+          "type": "mysterious_death",
+          "question": "Famous chess player with mysterious death circumstances",
+          "solution": "Alekhine",
+          "technique": "chess_history_research",
+          "context": "Alexander Alekhine (1892-1946), World Chess Champion, died mysteriously"
+        }
+      ],
+      "final_solution": "Rasputin Wilhelm Alekhine",
+      "solver": "lia",
+      "time_to_solve": "2_months",
+      "key_skills": ["historical_research", "biographical_knowledge", "chess_history"],
+      "difficulty_notes": "Open-ended research, no explicit clues"
+    },
+    {
+      "puzzle_id": 13,
+      "difficulty": "hard",
+      "type": "cryptographic_osint",
+      "problem": "Identify 8 images, hash their names with SHA-256, extract last 8 hex chars each, concatenate to form private key",
+      "clue": "Tail is your friend",
+      "sub_problems": [
+        {
+          "image_subject": "Terminator 2",
+          "technique": "reverse_image_search",
+          "hash_operation": "SHA256('Terminator 2')[-8:]",
+          "result": "c79eac48"
+        },
+        {
+          "image_subject": "Bitcoin Genesis Block",
+          "technique": "reverse_image_search",
+          "hash_operation": "SHA256('Bitcoin Genesis Block')[-8:]",
+          "result": "c3334fc9"
+        },
+        {
+          "image_subject": "Tuberculosis",
+          "technique": "reverse_image_search",
+          "hash_operation": "SHA256('Tuberculosis')[-8:]",
+          "result": "67d5aecb"
+        },
+        {
+          "image_subject": "Big Brother",
+          "technique": "reverse_image_search",
+          "hash_operation": "SHA256('Big Brother')[-8:]",
+          "result": "37222d9a"
+        },
+        {
+          "image_subject": "Arweave",
+          "technique": "reverse_image_search",
+          "hash_operation": "SHA256('Arweave')[-8:]",
+          "result": "4307027d"
+        },
+        {
+          "image_subject": "Terror From the Deep",
+          "technique": "reverse_image_search",
+          "hash_operation": "SHA256('Terror From the Deep')[-8:]",
+          "result": "0ec2bcd6"
+        },
+        {
+          "image_subject": "Dyatlov",
+          "technique": "reverse_image_search",
+          "hash_operation": "SHA256('Dyatlov')[-8:]",
+          "result": "f914417c"
+        },
+        {
+          "image_subject": "Vitalik Buterin",
+          "technique": "reverse_image_search",
+          "hash_operation": "SHA256('Vitalik Buterin')[-8:]",
+          "result": "f78d3c82"
+        }
+      ],
+      "final_solution": "c79eac48c3334fc967d5aecb37222d9a4307027d0ec2bcd6f914417cf78d3c82",
+      "solution_type": "ethereum_private_key",
+      "solver": "LeFevre",
+      "key_skills": [
+        "reverse_image_search",
+        "sha256_hashing",
+        "hex_manipulation",
+        "cultural_knowledge",
+        "programming"
+      ],
+      "tools_required": ["image_search_engine", "sha256_calculator_or_python"],
+      "difficulty_notes": "Requires technical + cultural knowledge, programming ability"
+    }
+  ],
+  "technique_taxonomy": {
+    "mathematical": [
+      "algebra",
+      "simultaneous_equations",
+      "constraint_optimization",
+      "probability",
+      "combinatorics",
+      "cryptarithm"
+    ],
+    "cryptographic": [
+      "sha256_hashing",
+      "hex_manipulation",
+      "private_key_construction",
+      "classical_ciphers"
+    ],
+    "visual": [
+      "pattern_recognition",
+      "geometric_counting",
+      "reflection_analysis",
+      "image_analysis",
+      "steganography"
+    ],
+    "knowledge_based": [
+      "historical_research",
+      "chess_notation",
+      "geography",
+      "cultural_knowledge",
+      "blockchain_concepts"
+    ],
+    "research": [
+      "reverse_image_search",
+      "osint",
+      "biographical_research",
+      "technical_documentation"
+    ],
+    "logic": [
+      "riddles",
+      "lateral_thinking",
+      "trick_questions",
+      "careful_reading"
+    ]
+  },
+  "difficulty_progression": {
+    "easy_medium": {
+      "puzzles": [1, 2],
+      "characteristics": [
+        "Solved same day",
+        "Clear problem statements",
+        "Standard techniques",
+        "Multi-domain but accessible"
+      ]
+    },
+    "medium": {
+      "puzzles": [4],
+      "characteristics": [
+        "Mixed data types",
+        "Format complexity",
+        "Several months to solve",
+        "Requires precision"
+      ]
+    },
+    "medium_hard": {
+      "puzzles": [8],
+      "characteristics": [
+        "Open-ended research",
+        "No explicit clues",
+        "Specialized knowledge",
+        "Multiple domains"
+      ]
+    },
+    "hard": {
+      "puzzles": [13],
+      "characteristics": [
+        "Technical + cultural knowledge",
+        "Requires programming",
+        "Cryptographic operations",
+        "OSINT skills"
+      ]
+    },
+    "very_hard": {
+      "puzzles": [3, 5, 7, 9, 10, 11, 12],
+      "characteristics": [
+        "Years unsolved",
+        "Minimal clues",
+        "Steganography suspected",
+        "Deep technical knowledge",
+        "Novel techniques possibly required"
+      ]
+    }
+  },
+  "learning_objectives": {
+    "for_ai_training": [
+      "Multi-domain problem solving",
+      "Combining logical and creative thinking",
+      "Research and information gathering",
+      "Pattern recognition across modalities",
+      "Cryptographic reasoning",
+      "Handling ambiguous or minimal clues",
+      "Long-term unsolved problem approaches",
+      "Integration of technical and cultural knowledge"
+    ]
+  },
+  "metadata": {
+    "total_puzzles_in_series": 13,
+    "solved_with_documentation": 7,
+    "unsolved": 6,
+    "total_reward_unclaimed": "1000+ AR",
+    "time_span": "2019-2025",
+    "creator": "Tiamat",
+    "platform": "ARweave"
+  }
+}
