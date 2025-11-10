@@ -1,0 +1,587 @@
+{
+  "collection_info": {
+    "name": "Cryptocurrency Private Key Hunting Puzzles",
+    "version": "1.0",
+    "created": "2025-11-10",
+    "total_puzzles": 165,
+    "bitcoin_puzzle_keys": 160,
+    "brain_wallet_examples": 4,
+    "treasure_hunts": 2,
+    "years_covered": "2009-2025",
+    "total_bounty_btc": 969,
+    "total_bounty_usd_approximate": 25000000
+  },
+  "bitcoin_puzzle_transaction": {
+    "overview": {
+      "creator": "Anonymous (suspected crypto enthusiast)",
+      "creation_date": "2015",
+      "total_keys": 160,
+      "solved_keys": 79,
+      "unsolved_keys": 81,
+      "original_amount_btc": 1000,
+      "remaining_amount_btc": 969,
+      "transaction_id": "08389f34c98c606322740c0be6a7125d9860bb8d5cb182c02f98461e5fa6cd15",
+      "pattern": "Sequential power-of-2 bit ranges",
+      "special_feature": "Every 5th puzzle has exposed public key (enables Kangaroo algorithm)"
+    },
+    "recent_solves": [
+      {
+        "puzzle_id": 69,
+        "solve_date": "2025-04-30",
+        "amount_btc": 6.9,
+        "difficulty_bits": 69,
+        "search_space": "2^69",
+        "technique": "GPU brute force cluster",
+        "solve_time_estimate": "less than 1 month",
+        "private_key_hex": "redacted",
+        "address": "1PoQRMsXyQFSqCCRuf58d6TxZLY1UFXWQB",
+        "notes": "Transaction bypassed public mempool to avoid interception"
+      },
+      {
+        "puzzle_id": 68,
+        "solve_date": "2025-04-06",
+        "amount_btc": 6.8,
+        "difficulty_bits": 68,
+        "search_space": "2^68",
+        "technique": "GPU brute force cluster",
+        "private_key_hex": "redacted",
+        "address": "1PH6JaoZAu49bYHmT2whzg7o9f24e8H5z"
+      },
+      {
+        "puzzle_id": 67,
+        "solve_date": "2025-02-21",
+        "amount_btc": 6.7,
+        "difficulty_bits": 67,
+        "search_space": "2^67",
+        "technique": "GPU brute force",
+        "private_key_hex": "redacted",
+        "address": "1MPdvYLzcekvEzAB7DmiHa1oU8KjYQcPF"
+      },
+      {
+        "puzzle_id": 66,
+        "solve_date": "2024-09-12",
+        "amount_btc": 6.6,
+        "difficulty_bits": 66,
+        "search_space": "2^66",
+        "technique": "GPU brute force with BitCrack",
+        "private_key_hex": "0x2832ed74f2b5e35e",
+        "address": "13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so",
+        "notes": "First major solve in years, reignited community interest"
+      }
+    ],
+    "solved_puzzles": {
+      "list": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+               21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+               41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+               61, 62, 63, 64, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125],
+      "count": 77,
+      "highest_difficulty": 125,
+      "techniques_used": ["GPU brute force", "BitCrack", "custom CUDA kernels", "Pollard's Kangaroo (for 70+)"]
+    },
+    "high_value_unsolved": [
+      {
+        "puzzle_id": 160,
+        "amount_btc": 16.0,
+        "difficulty_bits": 160,
+        "search_space_decimal": "1.46e48",
+        "public_key_exposed": false,
+        "feasibility": "impossible with current technology",
+        "estimated_time_single_gpu": "heat death of universe",
+        "address": "16jY7qLJnxb7CHZyqBP8qca9d51gAjyXQN"
+      },
+      {
+        "puzzle_id": 135,
+        "amount_btc": 13.5,
+        "difficulty_bits": 135,
+        "search_space_brute": "4.3e40",
+        "search_space_kangaroo": "2.1e20",
+        "public_key_exposed": true,
+        "feasibility": "challenging but theoretically feasible with Kangaroo",
+        "estimated_time_1000_gpus": "several years",
+        "technique_required": "Pollard's Kangaroo",
+        "address": "1MVDYgVaBtp8yL4FHcfY9dvQ1aWpTfJQBU",
+        "public_key": "exposed via outgoing transaction"
+      },
+      {
+        "puzzle_id": 130,
+        "amount_btc": 13.0,
+        "difficulty_bits": 130,
+        "search_space_brute": "1.3e39",
+        "search_space_kangaroo": "3.7e19",
+        "public_key_exposed": true,
+        "feasibility": "feasible with large distributed Kangaroo",
+        "estimated_time_1000_gpus": "years",
+        "technique_required": "Pollard's Kangaroo",
+        "address": "13zb1hQAB5xDTfASsGhUDSPe2GsuECxb2T"
+      },
+      {
+        "puzzle_id": 71,
+        "amount_btc": 7.1,
+        "difficulty_bits": 71,
+        "search_space_decimal": "2.36e21",
+        "public_key_exposed": false,
+        "feasibility": "possible with massive GPU cluster",
+        "estimated_time_10000_gpus": "years",
+        "next_logical_target": true,
+        "address": "1NpnQyZ7x24ud82b7WiRNvPm6N8bqGQnaS"
+      },
+      {
+        "puzzle_id": 75,
+        "amount_btc": 7.5,
+        "difficulty_bits": 75,
+        "search_space_kangaroo": "1.8e11",
+        "public_key_exposed": true,
+        "feasibility": "feasible with Kangaroo",
+        "estimated_time_100_gpus": "weeks to months",
+        "technique_required": "Pollard's Kangaroo",
+        "address": "1BDyrQ6WoF8VN3g9SAS1iKZcPzFfnDVieY"
+      }
+    ],
+    "difficulty_categories": {
+      "trivial_1_to_40": {
+        "count": 40,
+        "all_solved": true,
+        "solve_time": "seconds to minutes",
+        "method": "basic brute force"
+      },
+      "easy_41_to_50": {
+        "count": 10,
+        "all_solved": true,
+        "solve_time": "hours to days",
+        "method": "GPU brute force"
+      },
+      "medium_51_to_65": {
+        "count": 15,
+        "all_solved": true,
+        "solve_time": "days to months",
+        "method": "optimized GPU clusters"
+      },
+      "hard_66_to_80": {
+        "count": 15,
+        "solved": 9,
+        "unsolved": 6,
+        "solve_time": "months to years",
+        "method": "advanced GPU clusters",
+        "special_note": "Every 5th (70, 75, 80) can use Kangaroo algorithm"
+      },
+      "very_hard_81_to_125": {
+        "count": 45,
+        "solved": 9,
+        "unsolved": 36,
+        "solve_time": "years to decades with Kangaroo (for exposed keys only)",
+        "method": "Pollard's Kangaroo for exposed keys, infeasible otherwise"
+      },
+      "infeasible_126_to_160": {
+        "count": 35,
+        "solved": 0,
+        "unsolved": 35,
+        "solve_time": "beyond current computational capability",
+        "method": "theoretical only"
+      }
+    },
+    "exposed_public_keys": {
+      "puzzles": [70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160],
+      "count": 19,
+      "reason": "Small outgoing transactions reveal public keys",
+      "advantage": "Enables Pollard's Kangaroo algorithm with sqrt(N) complexity",
+      "example": {
+        "puzzle_120_brute_force": "2^120 operations (impossible)",
+        "puzzle_120_kangaroo": "2^60 operations (challenging but feasible)"
+      }
+    }
+  },
+  "brain_wallet_vulnerabilities": {
+    "overview": {
+      "concept": "Derive private keys from memorable passphrases",
+      "vulnerability": "Human-chosen phrases have low entropy",
+      "attack_method": "Dictionary and rainbow table attacks",
+      "success_rate": "95%+ for common phrases",
+      "compromised_count": "18000+"
+    },
+    "famous_examples": [
+      {
+        "name": "XKCD Correct Horse Battery Staple",
+        "passphrase": "correct horse battery staple",
+        "balance_peak_btc": 0.1,
+        "status": "drained within hours",
+        "attack_time": "<1 second after funding",
+        "lesson": "Even 'random' word combinations are in cracker dictionaries",
+        "xkcd_reference": "https://xkcd.com/936/"
+      },
+      {
+        "name": "Bitcoin Whitepaper Opening",
+        "passphrase": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+        "status": "compromised immediately upon any funding",
+        "attack_time": "<1 second",
+        "lesson": "Famous quotes are prime targets"
+      },
+      {
+        "name": "Shakespeare Quote",
+        "passphrase": "To be or not to be, that is the question",
+        "status": "monitored and drained instantly",
+        "attack_time": "<1 second",
+        "lesson": "Literary quotes are extensively cataloged"
+      },
+      {
+        "name": "Song Lyrics",
+        "passphrase": "Hey Jude don't make it bad",
+        "status": "compromised",
+        "attack_time": "<1 second",
+        "lesson": "Song lyrics databases used in attacks"
+      }
+    ],
+    "attack_tools": [
+      {
+        "name": "Brainflayer",
+        "author": "Ryan Castellucci",
+        "release": "DEFCON 23 (2015)",
+        "performance": "4x faster than original after optimizations",
+        "attack_modes": ["dictionary", "brute_force", "hybrid"],
+        "github": "https://github.com/ryancdotorg/brainflayer",
+        "notable_results": "18,000+ wallets cracked, $55 compute cost for 1 trillion checks"
+      }
+    ],
+    "dictionary_sources": [
+      "rockyou.txt (14M passwords)",
+      "leaked databases (billions of passwords)",
+      "Project Gutenberg (literature corpus)",
+      "song lyrics databases",
+      "movie quotes collections",
+      "famous speeches",
+      "religious texts",
+      "keyboard patterns (qwerty, asdfgh, etc.)",
+      "date/name combinations"
+    ],
+    "attack_complexity": {
+      "dictionary_attack": "O(n) for n entries",
+      "typical_dictionary_size": "1 billion to 1 trillion entries",
+      "hash_rate": "millions per second with optimized tools",
+      "cost_per_trillion": "$55 (2015), ~$5-10 (2025)"
+    }
+  },
+  "treasure_hunts": [
+    {
+      "name": "Satoshi's Treasure",
+      "year": 2019,
+      "prize_usd": 1000000,
+      "prize_btc": "~100 BTC at time",
+      "status": "ended but never claimed",
+      "current_status": "Bitcoin still locked in wallet",
+      "format": "Shamir's Secret Sharing",
+      "total_fragments": 1000,
+      "required_fragments": 400,
+      "distribution": "70-80% online puzzles, 20-30% physical locations",
+      "creators": ["Eric Meltzer", "Ian Miers (Zcash co-creator)", "17 others"],
+      "notable_events": [
+        {
+          "date": "2019-04-15",
+          "event": "Launch",
+          "description": "Game begins with first key releases"
+        },
+        {
+          "date": "2019-04-16",
+          "event": "First keys found",
+          "solver": "John Cantrell",
+          "method": "Exploited website encryption weakness",
+          "keys_obtained": 3,
+          "time": "minutes"
+        },
+        {
+          "date": "2020-09",
+          "event": "Early termination announced",
+          "reason": "Death of co-creator Adam Dupré",
+          "fragments_found_estimate": "150-200"
+        }
+      ],
+      "techniques_used": [
+        "QR code scanning",
+        "Cryptographic challenges",
+        "Physical location visits",
+        "Website vulnerability exploitation",
+        "Collaborative solving"
+      ],
+      "lessons": [
+        "Shamir's Secret Sharing provides strong security",
+        "400-of-1000 threshold was robust",
+        "Implementation vulnerabilities more exploitable than cryptography",
+        "Real-world coordination challenges significant"
+      ],
+      "wallet_address": "redacted but still contains BTC"
+    },
+    {
+      "name": "Jon Collins-Black Treasure Hunt",
+      "year": 2024,
+      "prize_usd": 2000000,
+      "prize_composition": "Bitcoin, gold, rare collectibles",
+      "status": "active",
+      "format": "5 treasure boxes hidden across USA",
+      "clue_source": "Book: 'There's Treasure Inside'",
+      "book_publish_date": "2024",
+      "boxes": 5,
+      "location": "Public lands across United States",
+      "techniques_required": [
+        "Puzzle solving from book clues",
+        "Geographic analysis",
+        "Physical treasure hunting",
+        "Cryptographic challenges (if any)"
+      ],
+      "bitcoin_component": "At least one box contains Bitcoin private keys",
+      "status_detail": "Boxes may still be unclaimed as of 2025"
+    }
+  ],
+  "other_puzzles": [
+    {
+      "name": "310 BTC Visual Puzzle",
+      "year": 2018,
+      "prize_btc": 310.61,
+      "prize_usd_at_time": "~8 million",
+      "format": "Single black-and-white image",
+      "wallets": 4,
+      "technique": "Visual steganography and pattern recognition",
+      "status": "partially solved",
+      "description": "Recovery codes for 4 wallets hidden in one image",
+      "methods_used": [
+        "Bit manipulation",
+        "OpenSSL decryption",
+        "Visual pattern analysis"
+      ]
+    },
+    {
+      "name": "CryptoHack Challenges",
+      "platform": "Web-based",
+      "status": "ongoing",
+      "format": "Progressive difficulty cryptography puzzles",
+      "categories": [
+        "Introduction",
+        "General",
+        "Mathematics",
+        "Block Ciphers",
+        "RSA",
+        "Diffie-Hellman",
+        "Elliptic Curves",
+        "Crypto On The Web",
+        "Miscellaneous"
+      ],
+      "prizes": "Educational, no monetary rewards",
+      "url": "https://cryptohack.org/"
+    },
+    {
+      "name": "Cryptopals Challenges",
+      "status": "ongoing",
+      "format": "8 sets of real-world cryptography challenges",
+      "difficulty": "Progressive from easy to research-level",
+      "focus": "Weaknesses in real-world crypto implementations",
+      "prizes": "Educational",
+      "url": "https://cryptopals.com/"
+    }
+  ],
+  "techniques_taxonomy": {
+    "brute_force_search": {
+      "complexity": "O(2^n) for n-bit keys",
+      "tools": ["BitCrack", "KeyHunt"],
+      "hardware": ["GPU (CUDA/OpenCL)", "ASIC (future)"],
+      "performance_examples": [
+        {"gpu": "GTX 1650", "mkeys_per_sec": 305},
+        {"gpu": "RTX 3090", "mkeys_per_sec": 1500},
+        {"gpu": "Top mining rig", "mkeys_per_sec": 10000}
+      ],
+      "optimization_params": {
+        "blocks": "multiple of compute units (default 32)",
+        "threads_per_block": "multiple of 32 (default 256)",
+        "keys_per_thread": "asymptotic performance increase"
+      },
+      "applicable_puzzles": "Bitcoin Puzzle #1-65 (sequential ranges without public keys)"
+    },
+    "pollard_kangaroo": {
+      "complexity": "O(sqrt(N)) for range size N with known public key",
+      "algorithm": "ECDLP solver for secp256k1",
+      "tools": ["JeanLucPons/Kangaroo", "KeyHunt"],
+      "requirements": ["Known public key", "Known range"],
+      "advantage": "Square root speedup vs brute force",
+      "limitation": "125-bit interval maximum in common implementations",
+      "example": {
+        "puzzle_135_brute": "2^135 operations (impossible)",
+        "puzzle_135_kangaroo": "2^67.5 operations (challenging but feasible)"
+      },
+      "applicable_puzzles": "Bitcoin Puzzle #70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, ..."
+    },
+    "dictionary_attack": {
+      "complexity": "O(n) for n dictionary entries",
+      "tools": ["Brainflayer"],
+      "data_structures": ["Bloom filters for O(1) lookup"],
+      "dictionary_sizes": "1 billion to 1 trillion entries",
+      "performance": "millions of passphrases per second",
+      "success_rate": "95%+ for human-chosen phrases",
+      "applicable_puzzles": "Brain wallets"
+    },
+    "baby_step_giant_step": {
+      "complexity": "O(sqrt(N)) time and space",
+      "algorithm": "Alternative ECDLP solver",
+      "advantage": "Deterministic",
+      "disadvantage": "Memory intensive",
+      "tools": ["KeyHunt", "custom implementations"],
+      "applicable_puzzles": "Small ranges with exposed public keys"
+    },
+    "rainbow_tables": {
+      "complexity": "O(1) lookup after O(N) preprocessing",
+      "storage": "Terabytes for comprehensive tables",
+      "trade_off": "Time-memory trade-off",
+      "applicable_puzzles": "Brain wallets, hash-based puzzles"
+    },
+    "distributed_computing": {
+      "approach": "Split search space across many machines",
+      "coordination": "Central server assigns ranges",
+      "scalability": "Near-linear with machine count",
+      "challenges": ["redundancy", "collision reporting", "trust"],
+      "applicable_puzzles": "Any large search space puzzle"
+    },
+    "steganography_analysis": {
+      "techniques": ["LSB extraction", "Alpha channel analysis", "Frequency analysis", "QR detection"],
+      "tools": ["stegsolve", "zxing", "exiftool"],
+      "applicable_puzzles": "310 BTC visual puzzle, Satoshi's Treasure (some keys)"
+    },
+    "side_channel_attacks": {
+      "vectors": ["Nonce reuse", "Weak RNG", "Timing attacks", "Implementation flaws"],
+      "examples": ["Satoshi's Treasure website exploit (John Cantrell)"],
+      "applicable_puzzles": "Implementation-based puzzles"
+    }
+  },
+  "tool_ecosystem": {
+    "primary_tools": [
+      {
+        "name": "BitCrack",
+        "purpose": "GPU-accelerated Bitcoin private key brute-forcing",
+        "platforms": ["CUDA (cuBitCrack)", "OpenCL (clBitCrack - experimental)"],
+        "performance": "100-10,000 MKey/s depending on GPU",
+        "features": ["Multi-GPU", "Checkpointing", "Custom patterns", "Bloom filters"],
+        "best_for": "Sequential brute force (Puzzle #1-65)",
+        "github": "https://github.com/brichard19/BitCrack"
+      },
+      {
+        "name": "KeyHunt",
+        "purpose": "Pattern-based key discovery",
+        "algorithms": ["BSGS", "Kangaroo", "Brute Force"],
+        "features": ["Public key ECDLP", "Memory-efficient BSGS", "Vanity address"],
+        "best_for": "Exposed public key puzzles",
+        "github": "Multiple forks available"
+      },
+      {
+        "name": "Kangaroo (JeanLucPons)",
+        "purpose": "Pollard's Kangaroo for ECDLP on secp256k1",
+        "complexity": "O(sqrt(N))",
+        "features": ["Work file save/resume", "Distinguished points", "Distributed solving"],
+        "limitation": "125-bit interval maximum",
+        "best_for": "Puzzle #70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125",
+        "github": "https://github.com/JeanLucPons/Kangaroo"
+      },
+      {
+        "name": "Brainflayer",
+        "purpose": "Brain wallet cracking",
+        "performance": "4x faster than original DEFCON release",
+        "attack_modes": ["Dictionary", "Brute force", "Hybrid"],
+        "features": ["Bloom filter optimization", "libsecp256k1 integration"],
+        "best_for": "Dictionary attacks on brain wallets",
+        "github": "https://github.com/ryancdotorg/brainflayer"
+      }
+    ],
+    "supporting_tools": [
+      {"name": "Bitcoin Core", "purpose": "Address balance checking, transaction analysis"},
+      {"name": "stegsolve", "purpose": "Visual steganography analysis"},
+      {"name": "exiftool", "purpose": "Metadata extraction"},
+      {"name": "hashcat", "purpose": "GPU hash cracking"},
+      {"name": "Python ecdsa", "purpose": "Elliptic curve operations"},
+      {"name": "Python secp256k1", "purpose": "Bitcoin secp256k1 operations"}
+    ]
+  },
+  "difficulty_progression": {
+    "learning_path": [
+      {
+        "level": "Beginner",
+        "time": "1-2 weeks",
+        "topics": ["Bitcoin basics", "Public key cryptography", "ECDSA", "Address derivation"],
+        "projects": ["Solve Puzzle #1-10", "Write Python brute force script"],
+        "skills": "Basic cryptography understanding"
+      },
+      {
+        "level": "Intermediate",
+        "time": "1-3 months",
+        "topics": ["CUDA/OpenCL", "GPU optimization", "Parallel algorithms"],
+        "projects": ["Optimize BitCrack", "Solve Puzzle #40-50", "Custom GPU kernel"],
+        "skills": "GPU programming, optimization"
+      },
+      {
+        "level": "Advanced",
+        "time": "3-6 months",
+        "topics": ["ECDLP", "Pollard's Kangaroo", "BSGS", "Distributed computing"],
+        "projects": ["Implement Kangaroo", "Attack brain wallets", "Contribute to tools"],
+        "skills": "Advanced cryptography, algorithm design"
+      },
+      {
+        "level": "Expert",
+        "time": "6+ months",
+        "topics": ["Number theory", "Cryptanalysis", "Hardware optimization", "Novel algorithms"],
+        "projects": ["Hybrid algorithms", "Solve Puzzle #70+", "Research contributions"],
+        "skills": "Research-level cryptography"
+      }
+    ]
+  },
+  "economic_analysis": {
+    "puzzle_70_example": {
+      "prize_btc": 7.0,
+      "prize_usd": 180000,
+      "brute_force_feasibility": "infeasible",
+      "kangaroo_with_pubkey": {
+        "gpus_needed": 100,
+        "cost_per_gpu_hour": 0.50,
+        "estimated_hours": 168,
+        "total_cost": 8400,
+        "net_profit": 171600,
+        "roi_percent": 2038
+      },
+      "mempool_protection_cost": "1-5% of reward to mining pool",
+      "risks": ["Competition", "Solution interception", "Technical failure"]
+    }
+  },
+  "security_ethics": {
+    "legal_status": {
+      "intentional_puzzles": "Legal and encouraged",
+      "brain_wallets_with_funds": "Gray area, jurisdiction-dependent",
+      "personal_wallets": "Illegal (theft)",
+      "research_education": "Legal with ethical boundaries"
+    },
+    "ethical_guidelines": [
+      "Only target intentional puzzles",
+      "Don't attack identifiable owners",
+      "Share knowledge openly",
+      "Contribute to community",
+      "Respect creator intentions"
+    ]
+  },
+  "community_resources": {
+    "tracking_sites": [
+      "https://privatekeys.pw/puzzles/bitcoin-puzzle-tx",
+      "https://btcpuzzle.info/",
+      "https://secretscan.org/Bitcoin_puzzle",
+      "https://mizogg.com/"
+    ],
+    "forums": [
+      "Bitcointalk.org - Bitcoin Puzzle thread",
+      "Reddit r/bitcoinpuzzles",
+      "Discord puzzle-solving groups"
+    ],
+    "documentation": [
+      "Bitcoin Developer Reference",
+      "secp256k1 Specification (SEC 2)",
+      "BIP32/39/44 (HD wallets)"
+    ]
+  },
+  "notable_statistics": {
+    "highest_solved_puzzle": 125,
+    "highest_solved_bits": 125,
+    "fastest_recent_solve": "Puzzle #69 in <1 month",
+    "longest_unsolved_with_exposed_key": "Puzzle #130, #135",
+    "total_brain_wallets_cracked": "18000+",
+    "brain_wallet_attack_cost": "$55 for 1 trillion checks (2015)",
+    "gpu_performance_range": "100-10,000 MKey/s"
+  }
+}
