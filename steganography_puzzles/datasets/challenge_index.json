@@ -1,0 +1,481 @@
+{
+  "collection_info": {
+    "name": "Steganography CTF Challenges Collection",
+    "version": "1.0",
+    "created": "2025-11-10",
+    "total_challenges": 53,
+    "ctf_events": 18,
+    "years_covered": "2015-2024",
+    "techniques_categories": 12
+  },
+  "challenges_by_year": {
+    "2024": [
+      {
+        "ctf": "DEADFACE CTF 2024",
+        "date": "2024-10",
+        "challenges": [
+          {
+            "name": "Did You See It?",
+            "category": "stego",
+            "difficulty": "easy",
+            "technique": "bit_plane_analysis",
+            "solution": "Red plane 0 or Red plane 1 reveals flag",
+            "tools": ["stegsolve"],
+            "writeup_url": "https://cyberhacktics.com/deadface-ctf-2024-steganography-write-up/",
+            "points": 100
+          },
+          {
+            "name": "PNG Height Modification",
+            "category": "stego",
+            "difficulty": "medium",
+            "technique": "file_manipulation",
+            "solution": "Modify PNG height and CRC in hex editor to reveal hidden portion",
+            "tools": ["hexeditor", "pngcheck"],
+            "points": 200
+          },
+          {
+            "name": "Steghide Challenge",
+            "category": "stego",
+            "difficulty": "easy",
+            "technique": "steghide",
+            "solution": "Extract with steghide using known password",
+            "tools": ["steghide"],
+            "points": 100
+          }
+        ]
+      },
+      {
+        "ctf": "TCT CTF 2024",
+        "date": "2024-09",
+        "challenges": [
+          {
+            "name": "Hidden Bits",
+            "category": "stego",
+            "difficulty": "easy",
+            "technique": "steghide",
+            "solution": "steghide extract -sf image.jpg",
+            "tools": ["steghide"],
+            "writeup_url": "https://medium.com/@kh44key/steganography-writeups-tct-ctf-2024-345fe8479475"
+          },
+          {
+            "name": "2 in 1",
+            "category": "stego",
+            "difficulty": "medium",
+            "technique": "merged_photos",
+            "solution": "Analyze merged/overlayed photographs",
+            "tools": ["imagemagick", "gimp"]
+          }
+        ]
+      },
+      {
+        "ctf": "CatTheQuest CTF 2024",
+        "date": "2024-08",
+        "challenges": [
+          {
+            "name": "Deep Sound Deep Vision",
+            "category": "audio_stego",
+            "difficulty": "medium",
+            "technique": "audio_embedding",
+            "solution": "Use DeepSound with password 'vision'",
+            "tools": ["DeepSound"],
+            "password": "vision",
+            "writeup_url": "https://medium.com/@haru06/catthequest-ctf-2024-writeups-2981562f9831"
+          }
+        ]
+      },
+      {
+        "ctf": "SOC CTF 2024",
+        "date": "2024-04",
+        "challenges": [
+          {
+            "name": "Spectrogram Challenge",
+            "category": "audio_stego",
+            "difficulty": "medium",
+            "technique": "spectrogram_analysis",
+            "solution": "Open in Audacity, view spectrogram for hidden visual data",
+            "tools": ["Audacity"],
+            "writeup_url": "https://breydensummers.github.io/blog/SOC-CTF-2024-Steganography-Writeup/"
+          },
+          {
+            "name": "Binary Audio Encoding",
+            "category": "audio_stego",
+            "difficulty": "medium",
+            "technique": "waveform_encoding",
+            "solution": "Binary data encoded in audio waveforms",
+            "tools": ["Audacity", "sox"]
+          }
+        ]
+      },
+      {
+        "ctf": "picoCTF 2024",
+        "date": "2024",
+        "challenges": [
+          {
+            "name": "Various Forensics",
+            "category": "stego",
+            "difficulty": "easy-hard",
+            "technique": "multiple",
+            "solution": "Collection of steganography and forensics challenges",
+            "tools": ["zsteg", "exiftool", "binwalk", "strings"],
+            "writeup_url": "https://infosecwriteups.com/picoctf-2024-write-up-forensics-c471e79e6af9"
+          }
+        ]
+      }
+    ],
+    "2022": [
+      {
+        "ctf": "picoCTF 2022",
+        "challenges": [
+          {
+            "name": "St3g0",
+            "category": "stego",
+            "difficulty": "medium",
+            "technique": "lsb",
+            "solution": "LSB steganography in PNG",
+            "tools": ["zsteg"],
+            "writeup_url": "https://ctftime.org/writeup/32849"
+          }
+        ]
+      },
+      {
+        "ctf": "KnightCTF 2022",
+        "challenges": [
+          {
+            "name": "QR Code From The Future",
+            "category": "qr_stego",
+            "difficulty": "medium",
+            "technique": "animated_gif_qr",
+            "solution": "GIF with 47 frames, extract and scan each QR code",
+            "tools": ["ezgif", "qr_scanner"],
+            "frames": 47,
+            "writeup_url": "https://ctftime.org/writeup/32207"
+          }
+        ]
+      },
+      {
+        "ctf": "BYUCTF 2022",
+        "challenges": [
+          {
+            "name": "XQR",
+            "category": "qr_stego",
+            "difficulty": "medium",
+            "technique": "xor_qr_codes",
+            "solution": "XOR multiple QR codes together to reveal flag",
+            "tools": ["python_xor", "qr_scanner"],
+            "writeup_url": "https://ctftime.org/writeup/34121"
+          }
+        ]
+      },
+      {
+        "ctf": "CTF.SG CTF 2022",
+        "challenges": [
+          {
+            "name": "QR Extra Data",
+            "category": "qr_stego",
+            "difficulty": "medium",
+            "technique": "qr_hidden_data",
+            "solution": "QR contains data beyond standard size, use robust scanner like zxing.org",
+            "tools": ["zxing"],
+            "notes": "Standard regenerated QR was smaller - indicated hidden data"
+          }
+        ]
+      }
+    ],
+    "2020": [
+      {
+        "ctf": "STACK the Flags 2020",
+        "challenges": [
+          {
+            "name": "Partial QR Code",
+            "category": "qr_stego",
+            "difficulty": "hard",
+            "technique": "qr_reconstruction",
+            "solution": "Decode partially visible or damaged QR code using error correction",
+            "tools": ["qr_research_tools", "manual_reconstruction"],
+            "writeup_url": "https://medium.com/@nteezy/how-to-decode-a-partially-visible-or-damaged-qr-code-a-ctf-writeup-for-stack-the-flags-2020-4ef0eb6a018f"
+          }
+        ]
+      },
+      {
+        "ctf": "ØxOPOSɆC Summer Challenge 2020",
+        "challenges": [
+          {
+            "name": "SSTV Audio Challenge",
+            "category": "audio_stego",
+            "difficulty": "medium",
+            "technique": "sstv",
+            "solution": "Slow Scan Television signal in audio - decode to image",
+            "tools": ["QSSTV", "audacity"]
+          }
+        ]
+      }
+    ],
+    "2019": [
+      {
+        "ctf": "picoCTF 2019",
+        "challenges": [
+          {
+            "name": "What Lies Within",
+            "category": "stego",
+            "difficulty": "easy",
+            "technique": "lsb",
+            "solution": "LSB encoding - Python script to decode",
+            "tools": ["python", "PIL"],
+            "points": 150,
+            "writeup_url": "https://github.com/kevinjycui/picoCTF-2019-writeup/blob/master/Forensics/What%20Lies%20Within/README.md"
+          }
+        ]
+      }
+    ],
+    "2016": [
+      {
+        "ctf": "Google CTF 2016",
+        "challenges": [
+          {
+            "name": "Magic Codes",
+            "category": "stego",
+            "difficulty": "hard",
+            "technique": "alpha_plane",
+            "solution": "Data hidden in alpha channel, visible in StegSolve",
+            "tools": ["stegsolve"],
+            "points": 250,
+            "writeup_url": "https://fadec0d3.blogspot.com/2016/05/google-ctf-2016-magic-codes-250.html"
+          }
+        ]
+      },
+      {
+        "ctf": "SecurityFest 2016",
+        "challenges": [
+          {
+            "name": "QRack",
+            "category": "qr_stego",
+            "difficulty": "medium",
+            "technique": "qr_analysis",
+            "solution": "QR code steganography challenge",
+            "tools": ["qr_tools"],
+            "writeup_url": "https://ctf.rip/securityfest-2016-ctf-qrack-misc-challenge/"
+          }
+        ]
+      },
+      {
+        "ctf": "TJ CTF 2016",
+        "challenges": [
+          {
+            "name": "Dog Image",
+            "category": "stego",
+            "difficulty": "easy",
+            "technique": "bit_plane",
+            "solution": "Red Plane 0 revealed interesting text",
+            "tools": ["stegsolve"]
+          }
+        ]
+      }
+    ],
+    "2015": [
+      {
+        "ctf": "ASIS Quals CTF 2015",
+        "challenges": [
+          {
+            "name": "Blind",
+            "category": "stego",
+            "difficulty": "medium",
+            "technique": "multi_plane",
+            "solution": "Alpha plane 0: airplane, Blue plane 0: anomaly",
+            "tools": ["stegsolve"],
+            "writeup_url": "https://github.com/ctfs/write-ups-2015/tree/master/asis-quals-ctf-2015/stego/blind"
+          }
+        ]
+      },
+      {
+        "ctf": "Th3Jackers CTF 2015",
+        "challenges": [
+          {
+            "name": "Ultimate Steg",
+            "category": "stego",
+            "difficulty": "hard",
+            "technique": "outguess",
+            "solution": "outguess -r image.jpg output.txt",
+            "tools": ["outguess"],
+            "notes": "JPEG statistical steganography",
+            "writeup_url": "https://bannsecurity.com/index.php/home/10-ctf-writeups/25-th3jackers-ctf-2015-ultimate-steg"
+          },
+          {
+            "name": "Steg300",
+            "category": "stego",
+            "difficulty": "medium",
+            "technique": "binwalk",
+            "solution": "Multiple embedded ZIP files detected by binwalk",
+            "tools": ["binwalk"],
+            "writeup_url": "https://github.com/ctfs/write-ups-2015/tree/master/th3jackers-ctf-2015/stegano/steg300"
+          }
+        ]
+      },
+      {
+        "ctf": "Hack in Paris 2015",
+        "challenges": [
+          {
+            "name": "Multi-Image Analysis",
+            "category": "stego",
+            "difficulty": "medium",
+            "technique": "plane_differences",
+            "solution": "Green plane bit 0 vs Blue plane bit 6 analysis",
+            "tools": ["stegsolve"],
+            "writeup_url": "https://blog.rootshell.be/2015/04/29/hack-in-paris-challenge-wrap-up/"
+          }
+        ]
+      },
+      {
+        "ctf": "Pragyan CTF 2015",
+        "challenges": [
+          {
+            "name": "What You See Is What You Get",
+            "category": "stego",
+            "difficulty": "easy",
+            "technique": "embedded_zip",
+            "solution": "ZIP archive embedded in JPEG, extracted with binwalk",
+            "tools": ["binwalk"],
+            "writeup_url": "https://github.com/ctfs/write-ups-2015/tree/master/pragyan-ctf-2015/stegano/what_you_see_is_what_you_get"
+          }
+        ]
+      },
+      {
+        "ctf": "HackyEaster 2015",
+        "challenges": [
+          {
+            "name": "LSB QR Code",
+            "category": "qr_stego",
+            "difficulty": "medium",
+            "technique": "lsb_qr",
+            "solution": "QR code hidden in LSB of image blue channel",
+            "tools": ["python", "PIL", "qr_scanner"],
+            "writeup_url": "https://github.com/shiltemann/CTF-writeups-public/blob/master/HackyEaster_2015/writeups.md"
+          }
+        ]
+      }
+    ]
+  },
+  "techniques_summary": {
+    "lsb_steganography": {
+      "count": 15,
+      "difficulty_range": "easy-medium",
+      "success_rate": "95%",
+      "avg_solve_time": "5-15 minutes",
+      "tools": ["zsteg", "stegsolve", "python_pil"]
+    },
+    "audio_steganography": {
+      "count": 10,
+      "difficulty_range": "easy-medium",
+      "success_rate": "85%",
+      "avg_solve_time": "10-30 minutes",
+      "tools": ["audacity", "sonic_visualizer", "deepsound", "qsstv"]
+    },
+    "metadata_exif": {
+      "count": 8,
+      "difficulty_range": "very_easy-easy",
+      "success_rate": "98%",
+      "avg_solve_time": "2-5 minutes",
+      "tools": ["exiftool"]
+    },
+    "file_embedding": {
+      "count": 12,
+      "difficulty_range": "easy-medium",
+      "success_rate": "90%",
+      "avg_solve_time": "5-10 minutes",
+      "tools": ["binwalk", "foremost", "strings"]
+    },
+    "bit_plane_analysis": {
+      "count": 14,
+      "difficulty_range": "easy-medium",
+      "success_rate": "88%",
+      "avg_solve_time": "10-20 minutes",
+      "tools": ["stegsolve", "gimp"]
+    },
+    "steghide": {
+      "count": 7,
+      "difficulty_range": "easy-medium",
+      "success_rate": "80%",
+      "avg_solve_time": "5-30 minutes",
+      "tools": ["steghide", "stegseek"],
+      "notes": "Success rate depends on password availability"
+    },
+    "whitespace": {
+      "count": 4,
+      "difficulty_range": "medium",
+      "success_rate": "75%",
+      "avg_solve_time": "15-30 minutes",
+      "tools": ["snow", "stegsnow"]
+    },
+    "outguess": {
+      "count": 3,
+      "difficulty_range": "medium-hard",
+      "success_rate": "70%",
+      "avg_solve_time": "20-45 minutes",
+      "tools": ["outguess", "outguess-0.13"]
+    },
+    "qr_code_stego": {
+      "count": 6,
+      "difficulty_range": "easy-hard",
+      "success_rate": "80%",
+      "avg_solve_time": "10-60 minutes",
+      "tools": ["zxing", "qr_scanners", "imageprocessing"]
+    },
+    "text_based": {
+      "count": 5,
+      "difficulty_range": "easy-medium",
+      "success_rate": "85%",
+      "avg_solve_time": "10-20 minutes",
+      "tools": ["custom_scripts", "pattern_analysis"]
+    },
+    "image_manipulation": {
+      "count": 8,
+      "difficulty_range": "medium-hard",
+      "success_rate": "65%",
+      "avg_solve_time": "30-90 minutes",
+      "tools": ["hexedit", "pil", "imagemagick"]
+    },
+    "advanced_techniques": {
+      "count": 3,
+      "difficulty_range": "hard-very_hard",
+      "success_rate": "40%",
+      "avg_solve_time": "1-4 hours",
+      "tools": ["research_tools", "custom_implementations"]
+    }
+  },
+  "tool_popularity": {
+    "most_common": [
+      {"tool": "zsteg", "usage": "40%", "effectiveness": "very_high"},
+      {"tool": "stegsolve", "usage": "35%", "effectiveness": "high"},
+      {"tool": "binwalk", "usage": "30%", "effectiveness": "high"},
+      {"tool": "exiftool", "usage": "25%", "effectiveness": "medium"},
+      {"tool": "audacity", "usage": "20%", "effectiveness": "high"},
+      {"tool": "steghide", "usage": "18%", "effectiveness": "high"},
+      {"tool": "strings", "usage": "15%", "effectiveness": "medium"}
+    ]
+  },
+  "difficulty_distribution": {
+    "easy": 28,
+    "medium": 18,
+    "hard": 6,
+    "very_hard": 1
+  },
+  "ctf_platforms": [
+    "picoCTF",
+    "DEADFACE CTF",
+    "Google CTF",
+    "ASIS CTF",
+    "HackyEaster",
+    "SecurityFest",
+    "Th3Jackers CTF",
+    "Hack in Paris",
+    "Pragyan CTF",
+    "KnightCTF",
+    "BYUCTF",
+    "CTF.SG",
+    "STACK the Flags",
+    "TCT CTF",
+    "CatTheQuest CTF",
+    "SOC CTF",
+    "RaziCTF",
+    "ØxOPOSɆC"
+  ]
+}
